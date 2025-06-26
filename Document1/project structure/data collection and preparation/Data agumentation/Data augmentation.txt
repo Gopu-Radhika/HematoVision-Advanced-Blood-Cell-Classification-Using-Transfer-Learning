@@ -1,6 +1,0 @@
-Use libraries like Keras ImageDataGenerator, Albumentations, or torchvision.transforms:
-•	Rotation (±20°)
-•	Horizontal/vertical flip
-•	Zoom
-•	Brightness/contrast variation
-•	Gaussian noise
