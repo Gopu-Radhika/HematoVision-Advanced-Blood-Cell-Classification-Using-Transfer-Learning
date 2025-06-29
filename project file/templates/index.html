@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HematoVision - Blood Cell Classifier</title>
+</head>
+<body>
+    <h1>Upload a Blood Cell Image</h1>
+    <form action="/predict" method="post" enctype="multipart/form-data">
+        <input type="file" name="file"><br><br>
+        <input type="submit" value="Predict">
+    </form>
+
+    {% if prediction %}
+        <h2>Prediction: {{ prediction }}</h2>
+        <img src="{{ img_path }}" alt="Uploaded Image" style="width:300px;">
+    {% endif %}
+</body>
+</html>
